@@ -4,7 +4,7 @@ const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
 const BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL;
 
 if (!API_KEY || !BASE_URL) {
-  throw new Error("API credentials not found in environment variables");
+  throw new Error("⚠️ Missing API credentials in environment variables");
 }
 
 export async function GET(request: Request) {
